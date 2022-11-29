@@ -41,7 +41,7 @@ Publish the subgraph schemas to apollo studio
 To run the servers in the `final` folder:
 
 1. Open a new terminal window, and navigate to `final/router`.
-2. Run `APOLLO_KEY=<APOLLO_KEY> APOLLO_GRAPH_REF=<APOLLO_GRAPH_REF> ./router`. This will install all packages in the main server, then start the main server at `http://127.0.0.1:4000/`.
+2. Run `APOLLO_KEY=<APOLLO_KEY> APOLLO_GRAPH_REF=<APOLLO_GRAPH_REF> ./router --config config.yaml`. This will start the router at `http://127.0.0.1:4000/` and allow access from `localhost:3000` for the client.
 3. Open another new terminal window, and navigate to `final/subgraph-locations`.
 4. Run `npm install && npm start` again. This will install all packages for the `locations` subgraph, then start the subgraph at `http://localhost:4001`.
 5. Open a third new terminal window, and navigate to `final/subgraph-reviews`.
